@@ -1,0 +1,42 @@
+::-webkit-scrollbar {
+    width: 0px;  
+    background: transparent;  
+}
+:root {
+    --dark-color: #27231F;
+    --red-color: #DE0001;
+    --desert-color: #C8651B;
+    --yellow-color: #FEDA15;
+    box-sizing: border-box;
+    font-size: 1em;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*, ::before, ::after{
+    box-sizing: inherit;
+}
+body * + *{
+    margin-top: 1.5em;
+}
+
+body{
+    padding: 2em;
+    background-color: var(--dark-color);  
+    height: 100vh;
+}
+
+
+@media (max-width: 575px) {
+    body{
+        padding: 0;
+        height: 100vh;
+    }
+}

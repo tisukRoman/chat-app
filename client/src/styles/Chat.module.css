@@ -1,0 +1,99 @@
+@import 'main.css';
+
+.container{
+    margin: 0 auto;
+    max-width: 40em;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 0.5em;
+    border: 2px outset var(--yellow-color);
+}
+
+.header{
+    border-bottom: 3px solid var(--dark-color);
+    max-width: 40em;
+    padding: 1em;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--dark-color);
+}
+
+.field{
+    border-bottom: 3px solid var(--dark-color);
+    padding: 1em 0;
+    margin-top: 0;
+    height: 30em;
+    overflow-y: scroll;
+}
+
+.inputPanel{
+    padding: 0.5em 2em;
+    margin-top: 0;
+    max-height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    padding: 0.5em;
+    width: 100%;
+    border-radius: 0.3em;
+}
+
+.button{
+    background-color: var(--dark-color);
+    padding: 0.5em;
+    margin: 0 0.5em;
+    color: aliceblue;
+    width: 10em;
+    border-radius: 0.3em;
+}
+
+.message{
+    margin: 0.5em;
+    display: flex;
+    justify-content: flex-start;
+    color: aliceblue;
+}
+.yourMessage{
+    margin: 0.5em;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--yellow-color);
+}
+
+.messageItem{
+    max-width: 75%;
+    background-color: var(--dark-color);
+    padding: 1em;
+    line-height: 1.2em;
+    border-radius: 1em;
+    border-bottom-left-radius: 0;
+    overflow-wrap: break-word;
+}
+.yourMessageItem{
+    max-width: 75%;
+    background-color: var(--dark-color);
+    padding: 1em;
+    line-height: 1.2em;
+    border-radius: 1em;
+    border-bottom-right-radius: 0;
+    overflow-wrap: break-word;
+}
+
+.username{
+    margin: 0;
+    padding: 1.5em 0.5em;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+
+@media (max-width: 575px) {
+    .container{
+        height: 100vh;
+    };
+}
